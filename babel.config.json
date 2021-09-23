@@ -1,0 +1,21 @@
+{
+  "presets": [
+    [
+      "@babel/preset-env",
+      {
+        "targets": {
+          "ie": "11"
+        }
+      }
+    ]
+  ],
+  "plugins": [
+    ["@babel/plugin-transform-runtime", { "corejs": 3 }]
+  ],
+  "assumptions": {
+    "constantSuper": false,
+    "noClassCalls": false,
+    "setClassMethods": false,
+    "superIsCallableConstructor": false
+  }
+}
